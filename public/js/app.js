@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
             }
             else {
                 message1.textContent = data.location
-                message2.textContent = data.forecast.temp
+                message2.textContent = "Current temp is " + data.forecast.temp + " Fahrenheit. Current sky is " + data.forecast.sky
             }
         })
     })
