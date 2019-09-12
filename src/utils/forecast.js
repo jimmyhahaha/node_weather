@@ -13,7 +13,8 @@ const forecast = (lati, long, callback) => {
         else {
             callback(undefined, {
                 sky: response.body.currently.summary,
-                temp: response.body.currently.temperature
+                temp: response.body.currently.temperature,
+                dailySummary: response.body.daily.summary
             })
         }
     })
